@@ -6,13 +6,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<<<<<<< HEAD
+
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="js/tonnyvalidations.min.js"></script>
-=======
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/tonnyvalidations.js"></script>
->>>>>>> 2244b8716a9e6f8ac3735bb4c7ecaea769a6c746
     <script src="js/tonnyvalidations_config.js"></script>
 
 </head>

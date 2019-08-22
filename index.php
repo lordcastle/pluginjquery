@@ -6,8 +6,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/tonnyvalidations.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="js/tonnyvalidations.min.js"></script>
     <script src="js/tonnyvalidations_config.js"></script>
 
 </head>

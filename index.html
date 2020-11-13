@@ -1,16 +1,17 @@
 <html>
 <head>
-    <title>Plugin</title>
+  <meta charset="utf-8">
+    <title>PluginValidations</title>
+    <!--Necesarios-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <script src="js/tonnyvalidations.min.js"></script>
-    <script src="js/tonnyvalidations_config.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleFooter.css">
+    <!--Pluging-->
+    <script src="tonnyvalidations.min.js"></script>
+    <script src="tonnyvalidations_config.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.min.css">
 </head>
 
 <body>
@@ -18,33 +19,110 @@
         <div class="row justify-content-lg-center align-items-lg-center">
             <div class="col-lg-6 align-self-center">
 
-                <h1>Prueba Plugin</h1>
-                <form class='contacto'>
-                    <div class="form-group">
-                        <label>Nombre:</label>
-                        <input type='text' class="form-control" id="nombre">
-                        <div class="invalid-feedback"> </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input type='text' class='form-control' id="email">
-                    </div>
-                    <div class="form-group">
-                        <label>Asunto:</label>
-                        <input type='text' class='form-control' id="asunto">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje:</label>
-                        <textarea rows='6' class='form-control' id="mensaje"></textarea>
-                    </div>
-                    <div>
-                        <input type='submit' value='Enviar Mensaje' class='btn btn-primary' id="validar">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
-<footer>&copy; 2019 por code8.com</footer>
+                <div class="h-25" >
+                    <h3>Validaciones simples para desarrolladores y diseñadores</h3>
+                    <button class="btn btn-primary" onclick="location.href='#demostracion'">Demostracion</button>
+                    <button class="btn btn-success" onclick="location.href='#implementacion'">Implementacion</button>
+                    <button class="btn btn-dark" onclick="location.href='https://github.com/marcocastillogtz/pluginjquery'">GitHub</button>
+                </div>
+    <br>
+                <div id="demostracion" class="mb-2rem ">
+                    <h2>Demostracion</h2>
+                    <form class='contacto'>
+                        <div class="form-group">
+                            <label>Nombre:</label>
+                            <input type='text' class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type='text' class='form-control' id="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Asunto:</label>
+                            <input type='text' class='form-control' id="asunto">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje:</label>
+                            <textarea rows='6' class='form-control' id="mensaje"></textarea>
+                        </div>
+                        <div>
+                            <input type='submit' value='Enviar Mensaje' class='btn btn-primary' id="validar">
+                        </div>
+                    </form>
+                </div>
 
+<br>
+
+                <div id="implementacion">
+                    <h2>Instalacion</h2>
+                    <p>Puede descargar los archivos de tonnyValidations.js de <a href="https://github.com/marcocastillogtz/pluginjquery">GitHub</a> </p>
+                </div>
+                <br>
+<br>
+            <div class="p-3 mb-5 ">
+                    <h3>Agregalos a tu proyecto</h3>
+                   
+                    <div class="card">
+                        <div class="card-header">HTML</div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <code class="lenguage-html" data-lang="html">
+                                <span>href="css/style.min.css"</span><br>
+                                <span>src="js/tonnyvalidations.min.js"</span><br>
+                                <span>src="js/tonnyvalidations_config.js"</span>
+                            </code>
+                        </div>
+                    </div>
+            </div>
+                
+    <br><br>
+                <div class="p-3 mb-5 "> 
+                    <h3>Modifica tonnyvalidations_config.js</h3>
+                    <p>Modifica el archivo tonnyvalidations_config.js de acuerdo a tus necesidades</p>
+                    <p>Puedes agregar los campos de tu formulario que deseas validar con su respectivo <b>id</b> </p>
+                    <p>Personalizar el mensaje de acuerdo a tu gusto y agregar  las reglas con expresiones regulares </p>
+                    <div class="card">
+                        <div class="card-header">
+                          
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <code class="lenguage-html" data-lang="html">
+                                $("#nombre").tonnyvalidations({
+                                    <br> 
+                                    reglas: /^[a-zA-Z]+[\s]{10,50}$/,
+                                    mensaje_reglas:"Ingrese solo de 10 a 50 letras"
+                                    <br> 
+                                  });
+                            </code>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>                
+    </div>            
+</body>
+<br>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+            <a href="#">[code8.com]</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+
+      </div>
+    </div>
+</footer>
 </html>
